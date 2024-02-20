@@ -1,33 +1,55 @@
 import "../lib/db";
 import * as fs from 'fs';
 import {ILocation, LocationModel} from "../models/location";
+import {ProfileModel} from "../models/profile";
 
-// Connect to MongoDB
-// Define Mongoose schema and model
+function createLocations(data: any[]) {
+
+    // Seed the database
+    LocationModel.deleteMany().then(() =>
+    {
+        console.log('Deleted all locations')
+
+        LocationModel.insertMany(data)
+            .then(() => {
+                console.log('Locations seeded successfully');
+                // mongoose.connection.close();
+            })
+            .catch((err) => {
+                console.error('Error seeding database:', err);
+                // mongoose.connection.close();
+            });
+    })
+}
+
+function createProfiles(people: any[]) {
+    // Read the JSON file
+
+    // Seed the database
+    ProfileModel.deleteMany().then(() =>
+    {
+        console.log('Deleted all profiles')
+
+        ProfileModel.insertMany(people)
+            .then(() => {
+                console.log('Profiles seeded successfully');
+                // mongoose.connection.close();
+            })
+            .catch((err) => {
+                console.error('Error seeding database:', err);
+                // mongoose.connection.close();
+            });
+    })
+}
+
 // Read the JSON file
-const data: any[] = JSON.parse(fs.readFileSync('data/locations.json', 'utf8'));
+const locations: any[] = JSON.parse(fs.readFileSync('data/locations.json', 'utf8'));
+const people: any[] = JSON.parse(fs.readFileSync('data/people.json', 'utf8'));
 
+createProfiles(people)
+createLocations(locations)
 
-// console.log(LocationModel.schema)
+console.log('Database seeded successfully');
 
-// data.forEach(location => {
-//     // console.log(location.address satisfies ILocation)
-//     console.log(location.address)
-// })
-
-// Seed the database
-LocationModel.deleteMany().then(() =>
-{
-    console.log('Deleted all locations')
-
-    LocationModel.insertMany(data)
-        .then(() => {
-            console.log('Database seeded successfully');
-            // mongoose.connection.close();
-        })
-        .catch((err) => {
-            console.error('Error seeding database:', err);
-            // mongoose.connection.close();
-        });
-})
+process.exit(0)
 
