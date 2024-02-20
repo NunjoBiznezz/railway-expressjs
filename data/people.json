@@ -1,0 +1,576 @@
+[
+    {
+      "firstName": "Doug",
+      "lastName": "Bercot",
+      "phone": "2604468802",
+      "email": "doug.bercot@gmail.com",
+      "handicap": 3.1,
+      "groups": [
+        "Pistol Invitational",
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Pete",
+      "lastName": "Thiel",
+      "email": "upthiel@hotmail.com",
+      "phone": "2605805450",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Denny",
+      "lastName": "McMaken",
+      "phone": "2604669600",
+      "email": "denniswmcmaken@yahoo.com",
+      "handicap": 17.5,
+      "groups": [
+        "Pistol Invitational",
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Dwight",
+      "lastName": "Johnson",
+      "phone": "2606375838",
+      "email": "dlj_49@yahoo.com",
+      "handicap": 8.2,
+      "groups": [
+        "Pistol Invitational",
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Todd",
+      "lastName": "Stillwell",
+      "email": "todds987@hotmail.com",
+      "phone": "2606271242",
+      "groups": [
+        "Pistol Invitational",
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Adam",
+      "lastName": "Carrao",
+      "phone": "2604505732",
+      "email": "irishnc114@gmail.com",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Todd",
+      "lastName": "Gerbers",
+      "email": "gerbers.todd@yahoo.com",
+      "phone": "8602871185",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Ryan",
+      "lastName": "McKillip",
+      "email": "mckillip1983@gmail.com",
+      "phone": "5745279443",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Corbin",
+      "lastName": "Bell",
+      "phone": "2607042704",
+      "email": "corbin4bell@gmail.com",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Eric",
+      "lastName": "Touchet",
+      "phone": "2604364535",
+      "email": "touchetgolf@gmail.com",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Justin",
+      "lastName": "Bell",
+      "phone": "2607042710",
+      "email": "belljc10@yahoo.com",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Tommy",
+      "lastName": "Wright",
+      "phone" :  "2604138403",
+      "email": "tommaayyyy@yahoo.com",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Scott",
+      "lastName": "Gerbers",
+      "email": "scottgerbers@gmail.com",
+      "phone": "4192065558",
+      "handicap": 2.7,
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Randy",
+      "lastName": "Gerbers",
+      "phone": "4192065557",
+      "email": "rgerbers3@yahoo.com",
+      "handicap": 15.8,
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Jon",
+      "lastName": "Rocholl",
+      "email": "jonrocholl@gmail.com",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Mark",
+      "lastName": "Grube",
+      "email": "markagrube@gmail.com",
+      "phone": "6143092302",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Jordan",
+      "lastName": "Gerbers",
+      "email": "jgerbers21@gmail.com",
+      "phone": "3174955059",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Scott",
+      "lastName": "Lothamer",
+      "email": "slothamer12@gmail.com",
+      "phone": "2604022454",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Chris",
+      "lastName": "Delagrange",
+      "phone": "2602460517",
+      "email": "cdelag34@comcast.net",
+      "handicap": 7.1,
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Chris",
+      "lastName": "Lake",
+      "phone": "2607506814",
+      "email": "clake7878@hotmail.com",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "T.J.",
+      "lastName": "Pfister",
+      "email": "tj_pfister@yahoo.com",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Barry",
+      "lastName": "Jackish",
+      "phone": "8144607058",
+      "email": "bjackisch@gmail.com",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "Todd",
+      "lastName": "Jacquay",
+      "email": "tjacquay@yahoo.com",
+      "phone": "2603486341",
+      "groups": [
+        "Pistol Invitational",
+        "Autumn Ridge Skins Game"
+      ]
+    },
+    {
+      "firstName": "Quinn",
+      "lastName": "Nofziger",
+      "phone": "2602400263",
+      "email": "q.nofziger@gmail.com",
+      "groups": [
+        "Pistol Invitational"
+      ]
+    },
+    {
+      "firstName": "John",
+      "lastName": "Parker",
+      "email": "john.parker.nysn@statefarm.com",
+      "phone": "2606022949",
+      "handicap": 7.8,
+      "groups": [
+        "Pistol Invitational",
+        "Autumn Ridge Skins Game"
+      ]
+    },
+    {
+      "firstName": "Frank",
+      "lastName": "Chartier",
+      "phone": "2605551212",
+      "email": "f.chartier@mchsi.com",
+      "handicap": 14.6,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Mike",
+      "lastName": "Bair",
+      "phone": "2603415923",
+      "email": "babymorgan@comcast.net",
+      "handicap": -1.0,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Jan",
+      "lastName": "Garber",
+      "phone": "3526170806",
+      "email": "garber2001@yahoo.com",
+      "handicap": 6.0,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Tim",
+      "lastName": "Bailey",
+      "phone": "2605575780",
+      "email": "baileytimothyl@comcast.net",
+      "handicap": 13.0,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Derek",
+      "lastName": "Hopper",
+      "phone": "2604171609",
+      "email": "hopper.derek@gmail.com",
+      "handicap": 9.0,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Jeff",
+      "lastName": "Frane",
+      "phone": "2605703512",
+      "email": "jeff.frane@bestonetire.com",
+      "handicap": 13.0,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Mark",
+      "lastName": "Snyder",
+      "phone": "2602421693",
+      "email": "msnyder@mchsi.com",
+      "handicap": 4.0,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Gray",
+      "lastName": "Mceachern",
+      "phone": "2607602437",
+      "email": "graymceachern@gmail.com",
+      "handicap": 9.2,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Jim",
+      "lastName": "Thiesing",
+      "email": "jim.thiesing@hotmail.com",
+      "handicap": 13.6,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Tim",
+      "lastName": "Dykstra",
+      "email": "noblehawkgolf@gmail.com",
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Mark",
+      "lastName": "Chesier",
+      "email": "mkcheshier@yahoo.com",
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Steve",
+      "lastName": "Cordes",
+      "email": "scorde2@frontier.com",
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Dave",
+      "lastName": "Fuhrman",
+      "phone": "2604666761",
+      "email": "Dfuhr66@frontier.com",
+      "handicap": 4.8,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Richard",
+      "lastName": "Hartwig",
+      "email": "hartwigconstruction@hotmail.com",
+      "handicap": 13.6,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Dan",
+      "lastName": "Hough",
+      "phone": "2607107698",
+      "email": "cav9093@gmail.com",
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Bill",
+      "lastName": "Howard",
+      "phone": "8503466222",
+      "email": "bkh_1154@yahoo.com",
+      "handicap": 13.2,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Mike",
+      "lastName": "Howard",
+      "phone": "8503466222",
+      "email": "topmike_2000@yahoo.com",
+      "handicap": 1.0,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Jay",
+      "lastName": "Jehl",
+      "email": "jrjehl@gmail.com",
+      "handicap": 0.2,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Johnson",
+      "email": "mjohnson@pga.com",
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Gerald",
+      "lastName": "King",
+      "email": "irishcraise@gmail.com",
+      "phone": "2604387463",
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Josh",
+      "lastName": "Kwascigrow",
+      "email": "jkwascigroh@gmail.com",
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "David",
+      "lastName": "Lehman",
+      "email": "Dhacker1956@gmail.com",
+      "phone": "2602788388",
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Jason",
+      "lastName": "Magnuson",
+      "email": "jmaggs1976@yahoo.com",
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Ron",
+      "lastName": "Mettert",
+      "email": "ronmettert@yahoo.com",
+      "handicap": 8.4,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Paul",
+      "lastName": "Newberg",
+      "email": "prngolfer@gmail.com",
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Jason",
+      "lastName": "Peters",
+      "phone": "2605703522",
+      "email": "jpeters244@gmail.com",
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Pete",
+      "lastName": "Spornhauer",
+      "email": "pspornhauer@yahoo.com",
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Ryan",
+      "lastName": "Waybright",
+      "email": "waybrir87@gmail.com",
+      "handicap": 3.4,
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+    {
+      "firstName": "Kevin",
+      "lastName": "Kauss",
+      "email": "kkauss999@yahoo.com",
+      "phone": "2603122797",
+      "groups": [
+        "Noble Hawk Skins Game"
+      ]
+    },
+  {
+    "firstName" : "Dave",
+    "lastName" : "Ash",
+    "email" : "dwleash@comcast.net",
+    "phone" : "2602298888",
+    "groups": [
+      "Pistol Invitational"
+    ]
+  },
+  {
+    "firstName" : "Jon",
+    "lastName" : "Arnold",
+    "email" : "jjarnie73@gmail.com",
+    "groups": [
+      "Noble Hawk Skins Game"
+    ]
+  },
+  {
+    "firstName" : "Kaden",
+    "lastName" : "Arnold",
+    "email" : "kdnarnold@gmail.com",
+    "phone": "2603415936",
+    "groups": [
+      "Noble Hawk Skins Game"
+    ]
+  },
+  {
+    "firstName" : "Shawn",
+    "lastName" : "Caldwell",
+    "email" : "relentlessartcollective@outlook.com",
+    "groups": [
+      "Noble Hawk Skins Game"
+    ]
+  },
+  {
+    "firstName" : "Mark",
+    "lastName" : "Chesier",
+    "email" : "mkcheshier@yahoo.com",
+    "groups": [
+      "Noble Hawk Skins Game"
+    ]
+  },
+  {
+    "firstName" : "Steve",
+    "lastName" : "Cordes",
+    "email" : "scorde2@frontier.com",
+    "groups": [
+      "Noble Hawk Skins Game"
+    ]
+  },
+  {
+    "firstName" : "Jim",
+    "lastName" : "Gordy",
+    "email" : "james.gordy@fedex.com",
+    "groups": [
+      "Noble Hawk Skins Game"
+    ]
+  },
+  {
+    "firstName" : "Chris",
+    "lastName" : "Lincoln",
+    "email" : "lincoln.chris@outlook.com",
+    "groups": [
+      "Noble Hawk Skins Game"
+    ]
+  },
+  {
+    "firstName" : "Jack",
+    "lastName" : "Searls",
+    "email" : "jacksearls@hotmail.com",
+    "groups": [
+      "Noble Hawk Skins Game"
+    ]
+  }
+]

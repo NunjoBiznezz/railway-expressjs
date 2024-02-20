@@ -1,0 +1,850 @@
+[{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341cd"
+  },
+  "username": "a044bc13-bd74-4d4e-baf2-f7d6a34fff41",
+  "firstName": "Doug",
+  "lastName": "Bercot",
+  "email": "doug.bercot@gmail.com",
+  "emailVerified": true,
+  "phone": "2604468802",
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 3.1,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341ce"
+  },
+  "firstName": "Pete",
+  "lastName": "Thiel",
+  "email": "upthiel@hotmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341cf"
+  },
+  "firstName": "Denny",
+  "lastName": "McMaken",
+  "email": "denniswmcmaken@yahoo.com",
+  "emailVerified": false,
+  "phone": "2604669600",
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 17.5,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341d0"
+  },
+  "firstName": "Dwight",
+  "lastName": "Johnson",
+  "email": "dlj_49@yahoo.com",
+  "emailVerified": false,
+  "phone": "2606375838",
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 8.2,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341d1"
+  },
+  "firstName": "Todd",
+  "lastName": "Stillwell",
+  "email": "todds987@hotmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341d2"
+  },
+  "firstName": "Adam",
+  "lastName": "Carrao",
+  "email": "irishnc114@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341d3"
+  },
+  "firstName": "Todd",
+  "lastName": "Gerbers",
+  "email": "gerbers.todd@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341d4"
+  },
+  "firstName": "Ryan",
+  "lastName": "McKillip",
+  "email": "mckillip1983@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341d5"
+  },
+  "firstName": "Corbin",
+  "lastName": "Bell",
+  "email": "corbin4bell@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341d6"
+  },
+  "firstName": "Eric",
+  "lastName": "Touchet",
+  "email": "touchetgolf@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341d7"
+  },
+  "firstName": "Justin",
+  "lastName": "Bell",
+  "email": "belljc10@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341d8"
+  },
+  "firstName": "Tommy",
+  "lastName": "Wright",
+  "email": "tommaayyyy@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341d9"
+  },
+  "firstName": "Scott",
+  "lastName": "Gerbers",
+  "email": "scottgerbers@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 2.7,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341da"
+  },
+  "firstName": "Randy",
+  "lastName": "Gerbers",
+  "email": "rgerbers3@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 15.8,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341db"
+  },
+  "firstName": "Jon",
+  "lastName": "Rocholl",
+  "email": "jonrocholl@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341dc"
+  },
+  "firstName": "Mark",
+  "lastName": "Grube",
+  "email": "markagrube@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341dd"
+  },
+  "firstName": "Jordan",
+  "lastName": "Gerbers",
+  "email": "jgerbers21@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341de"
+  },
+  "firstName": "Scott",
+  "lastName": "Lothamer",
+  "email": "slothamer12@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341df"
+  },
+  "firstName": "Chris",
+  "lastName": "Delagrange",
+  "email": "cdelag34@comcast.net",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 7.1,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341e0"
+  },
+  "firstName": "Chris",
+  "lastName": "Lake",
+  "email": "clake7878@hotmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341e1"
+  },
+  "firstName": "T.J.",
+  "lastName": "Pfister",
+  "email": "tj_pfister@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341e2"
+  },
+  "firstName": "Barry",
+  "lastName": "Jackish",
+  "email": "bjackisch@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341e3"
+  },
+  "firstName": "Todd",
+  "lastName": "Jacquay",
+  "email": "tjacquay@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341e4"
+  },
+  "firstName": "Quinn",
+  "lastName": "Nofziger",
+  "email": "q.nofziger@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341e5"
+  },
+  "firstName": "John",
+  "lastName": "Parker",
+  "email": "john.parker.nysn@statefarm.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 7.8,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341e6"
+  },
+  "firstName": "Frank",
+  "lastName": "Chartier",
+  "email": "f.chartier@mchsi.com",
+  "emailVerified": false,
+  "phone": "2605551212",
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 14.6,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341e7"
+  },
+  "firstName": "Mike",
+  "lastName": "Bair",
+  "email": "babymorgan@comcast.net",
+  "emailVerified": false,
+  "phone": "2603415923",
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": -1,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341e8"
+  },
+  "firstName": "Jan",
+  "lastName": "Garber",
+  "email": "garber2001@yahoo.com",
+  "emailVerified": false,
+  "phone": "3526170806",
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 6,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341e9"
+  },
+  "firstName": "Tim",
+  "lastName": "Bailey",
+  "email": "baileytimothyl@comcast.net",
+  "emailVerified": false,
+  "phone": "2605575780",
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 13,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341ea"
+  },
+  "firstName": "Derek",
+  "lastName": "Hopper",
+  "email": "hopper.derek@gmail.com",
+  "emailVerified": false,
+  "phone": "2604171609",
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 9,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341eb"
+  },
+  "firstName": "Jeff",
+  "lastName": "Frane",
+  "email": "jeff.frane@bestonetire.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 13,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341ec"
+  },
+  "firstName": "Mark",
+  "lastName": "Snyder",
+  "email": "msnyder@mchsi.com",
+  "emailVerified": false,
+  "phone": "2602421693",
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 4,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341ed"
+  },
+  "firstName": "Gray",
+  "lastName": "Mceachern",
+  "email": "graymceachern@gmail.com",
+  "emailVerified": false,
+  "phone": "2607602437",
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 9.2,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341ee"
+  },
+  "firstName": "Randy",
+  "lastName": "Gerbers",
+  "email": "rgerbers3@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 15.8,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341ef"
+  },
+  "firstName": "Jim",
+  "lastName": "Thiesing",
+  "email": "jim.thiesing@hotmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 13.6,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341f0"
+  },
+  "firstName": "Tim",
+  "lastName": "Dykstra",
+  "email": "noblehawkgolf@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341f1"
+  },
+  "firstName": "Mark",
+  "lastName": "Chesier",
+  "email": "mkcheshier@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341f2"
+  },
+  "firstName": "Steve",
+  "lastName": "Cordes",
+  "email": "scorde2@frontier.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341f3"
+  },
+  "firstName": "Dave",
+  "lastName": "Fuhrman",
+  "email": "Dfuhr66@frontier.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 4.8,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341f4"
+  },
+  "firstName": "Richard",
+  "lastName": "Hartwig",
+  "email": "hartwigconstruction@hotmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 13.6,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341f5"
+  },
+  "firstName": "Dan",
+  "lastName": "Hough",
+  "email": "cav9093@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341f6"
+  },
+  "firstName": "Bill",
+  "lastName": "Howard",
+  "email": "bkh_1154@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 13.2,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341f7"
+  },
+  "firstName": "Mike",
+  "lastName": "Howard",
+  "email": "topmike_2000@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 1,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341f8"
+  },
+  "firstName": "Jay",
+  "lastName": "Jehl",
+  "email": "jrjehl@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 0.2,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341f9"
+  },
+  "firstName": "Michael",
+  "lastName": "Johnson",
+  "email": "mjohnson@pga.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341fa"
+  },
+  "firstName": "Gerald",
+  "lastName": "King",
+  "email": "irishcraise@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341fb"
+  },
+  "firstName": "Josh",
+  "lastName": "Kwascigrow",
+  "email": "jkwascigroh@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341fc"
+  },
+  "firstName": "David",
+  "lastName": "Lehmann",
+  "email": "Dhacker1956@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341fd"
+  },
+  "firstName": "Jason",
+  "lastName": "Magnuson",
+  "email": "jmaggs1976@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341fe"
+  },
+  "firstName": "Ron",
+  "lastName": "Mettert",
+  "email": "ronmettert@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 8.4,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a5341ff"
+  },
+  "firstName": "Paul",
+  "lastName": "Newberg",
+  "email": "prngolfer@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534200"
+  },
+  "firstName": "Jason",
+  "lastName": "Peters",
+  "email": "jpeters244@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534201"
+  },
+  "firstName": "Pete",
+  "lastName": "Spornhauer",
+  "email": "pspornhauer@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534202"
+  },
+  "firstName": "Ryan",
+  "lastName": "Waybright",
+  "email": "waybrir87@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "handicap": 3.4,
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534203"
+  },
+  "firstName": "Kevin",
+  "lastName": "Kauss",
+  "email": "kkauss999@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534204"
+  },
+  "firstName": "Dave",
+  "lastName": "Ash",
+  "email": "dwleash@comcast.net",
+  "emailVerified": false,
+  "phone": "2602298888",
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534205"
+  },
+  "firstName": "Jon",
+  "lastName": "Arnold",
+  "email": "jjarnie73@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534206"
+  },
+  "firstName": "Kaden",
+  "lastName": "Arnold",
+  "email": "kdnarnold@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534207"
+  },
+  "firstName": "Shawn",
+  "lastName": "Caldwell",
+  "email": "relentlessartcollective@outlook.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534208"
+  },
+  "firstName": "Mark",
+  "lastName": "Chesier",
+  "email": "mkcheshier@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534209"
+  },
+  "firstName": "Steve",
+  "lastName": "Cordes",
+  "email": "scorde2@frontier.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a53420a"
+  },
+  "firstName": "Jim",
+  "lastName": "Gordy",
+  "email": "james.gordy@fedex.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a53420b"
+  },
+  "firstName": "Chris",
+  "lastName": "Lincoln",
+  "email": "lincoln.chris@outlook.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a53420c"
+  },
+  "firstName": "Jason",
+  "lastName": "Magnuson",
+  "email": "jmaggs1976@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a53420d"
+  },
+  "firstName": "Ron",
+  "lastName": "Mettert",
+  "email": "ronmettert@yahoo.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a53420e"
+  },
+  "firstName": "Jack",
+  "lastName": "Searls",
+  "email": "jacksearls@hotmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a53420f"
+  },
+  "firstName": "Ryan",
+  "lastName": "Waybright",
+  "email": "waybrir87@gmail.com",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+},
+{
+  "_id": {
+    "$oid": "65cd297221f9785c5a205e5f"
+  },
+  "username": "anonymousUser",
+  "emailVerified": false,
+  "phoneVerified": false,
+  "courses": [],
+  "_class": "profile"
+}]

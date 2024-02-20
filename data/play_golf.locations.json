@@ -1,0 +1,527 @@
+[{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534210"
+  },
+  "tees": [],
+  "name": "Brookwood Golf Club",
+  "managed": true,
+  "address": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "postalCode": "46819"
+  },
+  "twitterHandle": "BrookwoodGolf",
+  "facebookHandle": "brookwoodgc",
+  "website": "https://www.brookwoodgc.com/",
+  "phone": "2607473136",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534211"
+  },
+  "tees": [],
+  "name": "Cedar Creek",
+  "managed": true,
+  "address": {
+    "city": "Leo",
+    "state": "IN"
+  },
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534212"
+  },
+  "tees": [],
+  "name": "Autumn Ridge Golf Club",
+  "managed": true,
+  "address": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "postalCode": "46845"
+  },
+  "facebookHandle": "100064058074710",
+  "website": "https://www.autumnridgegc.com/",
+  "phone": "2606378727",
+  "email": " jeff@autumnridgegc.com",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534213"
+  },
+  "tees": [],
+  "name": "Cherry Hill",
+  "managed": true,
+  "address": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "postalCode": "46835"
+  },
+  "facebookHandle": "cherryhillgolfclubfw",
+  "website": "https://www.cherryhillgc.com/",
+  "phone": "2604858727",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534214"
+  },
+  "tees": [],
+  "name": "Riverbend",
+  "managed": true,
+  "address": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "postalCode": "46835"
+  },
+  "facebookHandle": "RiverbendGolfCourse",
+  "website": "https://riverbendfw.com/",
+  "phone": "2604852732",
+  "email": "golfriverbend@gmail.com",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534215"
+  },
+  "tees": [],
+  "name": "Chestnut Hills",
+  "managed": true,
+  "address": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "postalCode": "46814"
+  },
+  "website": "https://www.chestnuthillsgolf.com/",
+  "phone": "2606254146",
+  "email": "chestnuthillsgolf@yahoo.com",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534216"
+  },
+  "tees": [],
+  "name": "Foster Park",
+  "managed": true,
+  "address": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "postalCode": "46807"
+  },
+  "facebookHandle": "fortwayneparksgolf",
+  "website": "https://www.fostergolfcourse.com/",
+  "phone": "2604276016",
+  "email": "gary.whitacre@cityoffortwayne.org",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534217"
+  },
+  "tees": [],
+  "name": "Colonial Oaks",
+  "managed": true,
+  "address": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "postalCode": "46818"
+  },
+  "facebookHandle": "187422168040250",
+  "website": "https://colonialoaksgc.com",
+  "phone": "2604895121",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534218"
+  },
+  "tees": [],
+  "name": "McMillen Park",
+  "managed": true,
+  "address": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "postalCode": "46806"
+  },
+  "website": "https://www.mcmillengolfcourse.com/",
+  "phone": "2604276710",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534219"
+  },
+  "tees": [],
+  "name": "Shoaff Park",
+  "managed": true,
+  "address": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "postalCode": "46835"
+  },
+  "website": "https://www.shoaffgolfcourse.com/",
+  "phone": "2604276745",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a53421a"
+  },
+  "tees": [],
+  "name": "Orchard Ridge Country Club",
+  "managed": true,
+  "address": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "postalCode": "46809"
+  },
+  "website": "https://orchardridgecc.com/",
+  "phone": "2607473117",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a53421b"
+  },
+  "tees": [],
+  "name": "Fort Wayne Country Club",
+  "managed": true,
+  "address": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "postalCode": "46804"
+  },
+  "website": "https://www.ftwaynecc.org/",
+  "phone": "2604322581",
+  "email": "FWCC@ftwaynecc.org",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a53421c"
+  },
+  "tees": [],
+  "name": "Sycamore Hills Country Club",
+  "managed": true,
+  "address": {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "postalCode": "46814"
+  },
+  "website": "https://www.sycamorehillsgolfclub.com/",
+  "phone": "2606254324",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a53421d"
+  },
+  "tees": [
+    {
+      "name": "Talon",
+      "par": 71,
+      "yardage": 6817,
+      "courseRating": 73.5,
+      "bogeyRating": 97.9,
+      "slopeRating": 132
+    },
+    {
+      "name": "Augusta",
+      "par": 71,
+      "yardage": 6411,
+      "courseRating": 71.8,
+      "bogeyRating": 95.9,
+      "slopeRating": 130
+    },
+    {
+      "name": "White",
+      "par": 71,
+      "yardage": 5906,
+      "courseRating": 69.8,
+      "bogeyRating": 93.2,
+      "slopeRating": 126
+    },
+    {
+      "name": "Green-White",
+      "par": 71,
+      "yardage": 6192,
+      "courseRating": 70.2,
+      "bogeyRating": 91.2,
+      "slopeRating": 124
+    },
+    {
+      "name": "Gold",
+      "par": 71,
+      "yardage": 5235,
+      "courseRating": 66.6,
+      "bogeyRating": 88.7,
+      "slopeRating": 119
+    },
+    {
+      "name": "Redtail",
+      "par": 71,
+      "yardage": 4898,
+      "courseRating": 69.7,
+      "bogeyRating": 98.2,
+      "slopeRating": 121
+    }
+  ],
+  "name": "Noble Hawk",
+  "managed": true,
+  "address": {
+    "city": "Kendallville",
+    "state": "IN",
+    "postalCode": "46755"
+  },
+  "facebookHandle": "noblehawkgolf",
+  "website": "www.noblehawk.com",
+  "phone": "2603490900",
+  "email": "noblehawkgolf@gmail.com",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a53421e"
+  },
+  "tees": [],
+  "name": "Cobblestone",
+  "managed": true,
+  "address": {
+    "city": "Kendallville",
+    "state": "IN",
+    "postalCode": "46755"
+  },
+  "facebookHandle": "GolfCobblestone",
+  "website": "http://cobblestonegc.com/cobblestone/",
+  "phone": "2603491550",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a53421f"
+  },
+  "tees": [],
+  "name": "Trine University",
+  "managed": true,
+  "address": {
+    "city": "Angola",
+    "state": "IN",
+    "postalCode": "46703"
+  },
+  "website": "https://zollnergc.com/",
+  "phone": "3606654269",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534220"
+  },
+  "tees": [],
+  "name": "Glendarin Hills",
+  "managed": true,
+  "address": {
+    "city": "Angola",
+    "state": "IN",
+    "postalCode": "46703"
+  },
+  "facebookHandle": "glendarinhillsgolfclub",
+  "website": "https://www.glendarinhills.com/",
+  "phone": "2606243550",
+  "email": "",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534221"
+  },
+  "tees": [],
+  "name": "Bella Vista Golf",
+  "managed": true,
+  "address": {
+    "city": "Coldwater",
+    "state": "MI",
+    "postalCode": "49036"
+  },
+  "facebookHandle": "BellaVistaGolfCourse",
+  "website": "https://www.bellavistagolf.org/",
+  "phone": "5172386085",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534222"
+  },
+  "tees": [],
+  "name": "Eagle Eye",
+  "managed": true,
+  "address": {
+    "city": "Bath",
+    "state": "MI",
+    "postalCode": "48808"
+  },
+  "facebookHandle": "eagleeyegolfandbanquetcenter",
+  "website": "https://eagleeyegolfclub.com/",
+  "phone": "5179038064",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534223"
+  },
+  "tees": [],
+  "name": "Arcadia Bluffs",
+  "managed": true,
+  "address": {
+    "city": "Bear Lake",
+    "state": "MI",
+    "postalCode": "46914"
+  },
+  "twitterHandle": "arcadia_bluffs",
+  "facebookHandle": "ArcadiaBluffs",
+  "website": "https://arcadiabluffs.com/",
+  "phone": "2318893001",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534224"
+  },
+  "tees": [],
+  "name": "Alpine",
+  "managed": true,
+  "address": {
+    "city": "Comstock Park",
+    "state": "MI",
+    "postalCode": "49321"
+  },
+  "twitterHandle": "",
+  "facebookHandle": "alpinegolfmichigan",
+  "website": "https://www.alpinegolfmichigan.com",
+  "phone": "6167841064",
+  "email": "info@alpinegolfmichigan.com",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534225"
+  },
+  "tees": [],
+  "name": "Heather",
+  "managed": true,
+  "address": {
+    "city": "Harbor Springs",
+    "state": "MI",
+    "postalCode": "49740"
+  },
+  "website": "https://www.highlandsharborsprings.com/the-heather",
+  "phone": "8884834946",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534226"
+  },
+  "tees": [],
+  "name": "Arthur Hills",
+  "managed": true,
+  "address": {
+    "city": "Boyne Falls",
+    "state": "MI",
+    "postalCode": "49740"
+  },
+  "twitterHandle": "BOYNE_Golf",
+  "facebookHandle": "BOYNEGolf",
+  "website": "https://boynegolf.com/the-highlands/arthur-hills",
+  "phone": "2315463028",
+  "email": "",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534227"
+  },
+  "tees": [],
+  "name": "The Moor",
+  "managed": true,
+  "address": {
+    "city": "Harbor Springs",
+    "state": "MI",
+    "postalCode": "49740"
+  },
+  "twitterHandle": "BOYNE_Golf",
+  "facebookHandle": "BOYNEGolf",
+  "website": "https://boynegolf.com/the-highlands/the-moor",
+  "phone": "8884834946",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534228"
+  },
+  "tees": [],
+  "name": "Bay Harbor",
+  "managed": true,
+  "address": {
+    "city": "Bay Harbor",
+    "state": "MI",
+    "postalCode": "49770"
+  },
+  "website": "https://bayharborgolf.com/",
+  "phone": "8775122247",
+  "staff": [],
+  "_class": "golfCourse"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a534229"
+  },
+  "name": "Doug's house",
+  "managed": true,
+  "address": {
+    "city": "Fort Wayne",
+    "state": "IN"
+  },
+  "staff": [],
+  "_class": "location"
+},
+{
+  "_id": {
+    "$oid": "65cccf16b0ab48792a53422a"
+  },
+  "tees": [],
+  "name": "Orchard Ridge Country Club",
+  "managed": true,
+  "address": {
+    "city": "Fort Wayne",
+    "state": "IN"
+  },
+  "staff": [],
+  "_class": "golfCourse"
+}]

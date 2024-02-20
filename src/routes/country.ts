@@ -2,7 +2,6 @@ import { Router } from "express";
 import { CountryModel, ICountry } from "../models/country";
 
 const routes = Router();
-
 routes.get("/", async (req, res) => {
   try {
     const countries: ICountry[] = await CountryModel.find().exec();
