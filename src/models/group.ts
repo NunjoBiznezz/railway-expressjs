@@ -4,7 +4,7 @@ import {IParticipant, participantSchema} from "./participant";
 interface IGroup extends Document {
     name: string;
     description?: string
-    participants: Array<IParticipant>
+    participants: IParticipant[]
 }
 
 const groupSchema = new Schema({
