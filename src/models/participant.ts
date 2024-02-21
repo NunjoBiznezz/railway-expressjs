@@ -3,7 +3,7 @@ import {IPerson} from "./person";
 
 
 interface IParticipant extends IPerson, Document {
-    profile?: Types.ObjectId;
+    profile?: string;
     phone?: string;
     phoneVerified?: boolean;
     email?: string;
