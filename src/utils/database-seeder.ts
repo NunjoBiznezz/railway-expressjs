@@ -1,103 +1,109 @@
-import "../lib/db";
 import * as fs from 'fs';
 import {ILocation, LocationModel} from "../models/location";
 import {ProfileModel} from "../models/profile";
 import {GroupModel, IGroup} from "../models/group";
+import {IParticipant, ParticipantModel} from "../models/participant";
+import mongoose from "mongoose";
 
 async function createLocations(locations: any[]) {
     try {
         await LocationModel.insertMany(locations)
+            .then(() => console.log('created locations'))
     } catch (error) {
         console.error('Error seeding locations:', error);
+        throw error;
     }
 }
 
 async function createProfiles(people: any[]) {
     try {
         await ProfileModel.insertMany(people)
-    } catch (err) {
-        console.error('Error seeding profiles:', err);
-        // mongoose.connection.close();
+            .then(() => console.log('Created profiles'))
+    } catch (error) {
+        console.error('Error seeding profiles:', error);
+        throw error;
     }
 }
 
 async function createGroups(people: any[]) {
     try {
-        const groups = new Map<string, any>()
+        const groupMap = new Map<string, IParticipant[]>()
 
         people.forEach(person => {
-            let participant = person
+            const participant = new ParticipantModel(person)
 
-            // console.log(`Processing ${person.firstName} ${person.lastName}`)
-            ProfileModel.findOne({ email: person.email }).then((profile) => {
+            ProfileModel.findOne({ email: person.email }).exec().then((profile) => {
                 if (profile) {
-                    participant.profile = profile.get('_id')
-                    console.log(`Person: `, JSON.stringify(participant))
+                    participant.profile = profile.id
                 }
+                return participant
+
+            }).catch((error) => {
+                // continue
             })
 
-            if (person.groups) {
-                person.groups.forEach((groupName: string) => {
-                    let group = groups.get(groupName)
-                    if (group) {
-                        // console.log(`${person.firstName} ${person.lastName} added to group "${groupName}"`)
-                        group.participants.push(participant)
-                    } else {
-                        // console.log(`${person.firstName} ${person.lastName} added to new group "${groupName}"`)
-                        groups.set(groupName, {
-                            name: groupName,
-                            participants: [ participant ]}
-                        )
-                    }
-                    // const participant = {
-                    //     firstName: person.firstName,
-                    //     lastName: person.lastName,
-                    //     nickname: person.nickname,
-                    //     phone: person.phone,
-                    //     email:person.email
-                    // }
-                    // console.log(`${person.firstName} ${person.lastName} added to group "${groupName}"`)
-                })
-            }
+            const groupNames = person.groups || []
+            groupNames.forEach((groupName: string) => {
+                if (!groupMap.has(groupName)) {
+                    groupMap.set(groupName, [])
+                }
+                groupMap.get(groupName)!.push(participant)
+            })
         })
 
-        const newGroups = [...groups.values()];
+        const newGroups : IGroup[] = []
+        groupMap.forEach((participants, groupName) => {
+            const newGroup = new GroupModel({
+                name: groupName,
+                participants: participants})
+            // console.log(`Created group ${groupName} with ${participants}`)
+            newGroups.push(newGroup)
+        })
 
-        // console.log('Groups: ', JSON.stringify(newGroups))
+        await GroupModel.create(newGroups)
+            .then(() => console.log(`Created ${newGroups.length} groups`))
 
-    // newGroups.forEach(group => {
-    //     console.log('Group: ', JSON.stringify(group))
-    // })
+        // await GroupModel.insertMany(newGroups)
+        //     .then(() => console.log(`Created ${newGroups.length} groups`))
 
-        await GroupModel.insertMany(newGroups)
-    } catch (err) {
-        console.error('Error seeding groups:', err);
+    } catch (error) {
+        console.error('Error seeding groups:', error);
+        throw error;
     }
 }
 
 async function seedDatabase() {
+    try {
+        if (!process.env.MONGO_URL) {
+            throw new Error("Please add the MONGO_URL environment variable");
+        }
+
+        await mongoose.connect(process.env.MONGO_URL);
+
 // Read the JSON file
-    const locations: any[] = JSON.parse(fs.readFileSync('data/locations.json', 'utf8'));
-    const people: any[] = JSON.parse(fs.readFileSync('data/people.json', 'utf8'));
+        const locations: any[] = JSON.parse(fs.readFileSync('data/locations.json', 'utf8'));
+        const people: any[] = JSON.parse(fs.readFileSync('data/people.json', 'utf8'));
 
-    await ProfileModel.deleteMany({}).then(() => {
-        console.log('Removed profiles')
-    })
-    await LocationModel.deleteMany({}).then(() => {
-        console.log('Removed locations')
-    })
-    await GroupModel.deleteMany({}).then(() => {
-        console.log('Removed groups')
-    })
+        await ProfileModel.deleteMany({})
+            .then(() =>  console.log('Removed profiles'))
+        await LocationModel.deleteMany({})
+            .then(() => console.log('Removed locations'))
+        await GroupModel.deleteMany({})
+            .then(() => console.log('Removed groups'))
 
-    await createProfiles(people).then(() => { console.log('Created profiles')})
-    await createGroups(people).then(() => {console.log('Created groups')})
-    await createLocations(locations).then(() => { console.log('Created locations')})
+        await createProfiles(people)
+        await createGroups(people)
+        await createLocations(locations)
+
+    } catch(error) {
+        console.log(`Error ${error} seeding`)
+    } finally {
+        await mongoose.disconnect()
+    }
+
 }
 
 seedDatabase().then(() => {
-    process.exit(0)
-
+    // mongoose.disconnect().then(() => {})
+    // process.exit(0)
 })
-
-

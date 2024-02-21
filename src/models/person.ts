@@ -1,4 +1,4 @@
-import {Document} from "mongoose";
+import {Document, Schema} from "mongoose";
 
 interface IPerson extends Document {
     firstName?: string;
@@ -7,4 +7,23 @@ interface IPerson extends Document {
     nickname?: string;
 }
 
-export { IPerson }
+const personSchema = new Schema({
+    firstName: {
+        type: String,
+        required: false
+    },
+    middleName: {
+        type: String,
+        required: false
+    },
+    lastName: {
+        type: String,
+        required: false
+    },
+    nickname: {
+        type: String,
+        required: false
+    },
+})
+
+export { IPerson, personSchema }

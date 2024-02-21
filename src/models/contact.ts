@@ -1,8 +1,10 @@
-import {Document, model, Schema} from "mongoose";
-import {AddressSchema, IAddress} from "./address";
+import {Document, model, Schema, Types} from "mongoose";
+import {addressSchema, IAddress} from "./address";
 import {IPerson} from "./person";
 
 interface IContact extends IPerson, Document {
+    _owner: Types.ObjectId;
+    _profile: Types.ObjectId;
     phone?: string;
     phoneVerified?: boolean;
     email?: string;
@@ -12,13 +14,13 @@ interface IContact extends IPerson, Document {
 }
 
 
-const ContactSchema = new Schema({
-    owner: {
+const contactSchema = new Schema({
+    _owner: {
         type: Schema.Types.ObjectId,
         ref: 'Profile',
         required: true
     },
-    profile: {
+    _profile: {
         type: Schema.Types.ObjectId,
         ref: 'Profile',
         required: false
@@ -58,7 +60,7 @@ const ContactSchema = new Schema({
         default: false
     },
     address: {
-        type: AddressSchema,
+        type: addressSchema,
         required: false,
     },
     birthDate: {
@@ -67,6 +69,6 @@ const ContactSchema = new Schema({
     }
 })
 
-const ContactModel = model<IContact>("Contact", ContactSchema)
+const ContactModel = model<IContact>("Contact", contactSchema)
 
 export { ContactModel, IContact }

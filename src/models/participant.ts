@@ -1,17 +1,16 @@
 import {Document, model, Schema, Types} from "mongoose";
-import {AddressSchema, IAddress} from "./address";
 import {IPerson} from "./person";
 
 
 interface IParticipant extends IPerson, Document {
-    profile?: string;
+    profile?: Types.ObjectId;
     phone?: string;
     phoneVerified?: boolean;
     email?: string;
     emailVerified?: boolean;
 }
 
-const ParticipantSchema = new Schema({
+const participantSchema = new Schema({
     profile: {
         type: Schema.Types.ObjectId,
         ref: 'Profile',
@@ -53,4 +52,6 @@ const ParticipantSchema = new Schema({
     },
 })
 
-export { IParticipant, ParticipantSchema }
+const ParticipantModel = model<IParticipant>('Participant', participantSchema)
+
+export { IParticipant, participantSchema, ParticipantModel }

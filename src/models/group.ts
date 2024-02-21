@@ -1,5 +1,5 @@
 import {Document, model, Schema} from "mongoose";
-import {IParticipant, ParticipantSchema} from "./participant";
+import {IParticipant, participantSchema} from "./participant";
 
 interface IGroup extends Document {
     name: string;
@@ -7,7 +7,7 @@ interface IGroup extends Document {
     participants: Array<IParticipant>
 }
 
-const GroupSchema = new Schema({
+const groupSchema = new Schema({
     name: {
         type: String,
         required: true
@@ -17,11 +17,10 @@ const GroupSchema = new Schema({
         required: false
     },
     participants: [{
-        type: ParticipantSchema,
-        required: false
+        type: participantSchema,
     }]
 })
 
-const GroupModel = model<IGroup>("Group", GroupSchema)
+const GroupModel = model<IGroup>("Group", groupSchema)
 
 export { GroupModel, IGroup }

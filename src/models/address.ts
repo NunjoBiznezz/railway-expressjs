@@ -8,7 +8,7 @@ interface IAddress extends Document {
     postalCode?: string;
 }
 
-const AddressSchema = new Schema({
+const addressSchema = new Schema({
     street: {
         type: String,
         required: false
@@ -32,4 +32,4 @@ const AddressSchema = new Schema({
 
 });
 
-export { IAddress, AddressSchema }
+export { IAddress, addressSchema }

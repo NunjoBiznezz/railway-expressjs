@@ -1,5 +1,5 @@
 import {model, Schema, Document, ObjectId} from "mongoose";
-import {AddressSchema, IAddress} from "./address";
+import {addressSchema, IAddress} from "./address";
 
 interface ILocation extends Document {
     name: string;
@@ -11,7 +11,7 @@ interface ILocation extends Document {
     address?: IAddress;
 }
 
-const LocationSchema = new Schema({
+const locationSchema = new Schema({
     name: {
         type: String,
         unique: false,
@@ -22,7 +22,7 @@ const LocationSchema = new Schema({
         required: false
     },
     address: {
-        type: AddressSchema,
+        type: addressSchema,
         required: false,
     },
     twitterHandle: {
@@ -43,6 +43,6 @@ const LocationSchema = new Schema({
     }
 })
 
-const LocationModel = model<ILocation>("Location", LocationSchema)
+const LocationModel = model<ILocation>("Location", locationSchema)
 
 export { LocationModel, ILocation }

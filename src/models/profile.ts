@@ -1,5 +1,5 @@
 import {Document, model, Schema} from "mongoose";
-import {AddressSchema, IAddress} from "./address";
+import {addressSchema, IAddress} from "./address";
 import {IPerson} from "./person";
 
 interface IProfile extends IPerson, Document {
@@ -12,7 +12,7 @@ interface IProfile extends IPerson, Document {
     address?: IAddress;
 }
 
-const ProfileSchema = new Schema({
+const profileSchema = new Schema({
     username: {
         type: String,
         required: false // DEB ??
@@ -52,7 +52,7 @@ const ProfileSchema = new Schema({
         default: false
     },
     address: {
-        type: AddressSchema,
+        type: addressSchema,
         required: false,
     },
     birthDate: {
@@ -61,6 +61,6 @@ const ProfileSchema = new Schema({
     }
 })
 
-const ProfileModel = model<IProfile>("Profile", ProfileSchema)
+const ProfileModel = model<IProfile>("Profile", profileSchema)
 
 export { ProfileModel, IProfile }
