@@ -1,4 +1,4 @@
-import {Document, model, Schema} from "mongoose";
+import {Document, model, Schema, Types} from "mongoose";
 import {AddressSchema, IAddress} from "./address";
 import {IPerson} from "./person";
 

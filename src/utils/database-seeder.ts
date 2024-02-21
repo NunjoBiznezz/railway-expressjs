@@ -26,18 +26,27 @@ async function createGroups(people: any[]) {
         const groups = new Map<string, any>()
 
         people.forEach(person => {
+            let participant = person
+
             // console.log(`Processing ${person.firstName} ${person.lastName}`)
+            ProfileModel.findOne({ email: person.email }).then((profile) => {
+                if (profile) {
+                    participant.profile = profile.get('_id')
+                    console.log(`Person: `, JSON.stringify(participant))
+                }
+            })
+
             if (person.groups) {
                 person.groups.forEach((groupName: string) => {
                     let group = groups.get(groupName)
                     if (group) {
                         // console.log(`${person.firstName} ${person.lastName} added to group "${groupName}"`)
-                        group.participants.push(person)
+                        group.participants.push(participant)
                     } else {
                         // console.log(`${person.firstName} ${person.lastName} added to new group "${groupName}"`)
                         groups.set(groupName, {
                             name: groupName,
-                            participants: [ person ]}
+                            participants: [ participant ]}
                         )
                     }
                     // const participant = {
