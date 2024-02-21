@@ -2,20 +2,20 @@ import {Document, model, Schema} from "mongoose";
 import {AddressSchema, IAddress} from "./address";
 import {IPerson} from "./person";
 
-interface IProfile extends IPerson, Document {
-    username: string;
+
+interface IParticipant extends IPerson, Document {
+    profile?: string;
     phone?: string;
     phoneVerified?: boolean;
     email?: string;
     emailVerified?: boolean;
-    birthDate?: Date;
-    address?: IAddress;
 }
 
-const ProfileSchema = new Schema({
-    username: {
-        type: String,
-        required: false // DEB ??
+const ParticipantSchema = new Schema({
+    profile: {
+        type: Schema.Types.ObjectId,
+        ref: 'Profile',
+        required: false
     },
     firstName: {
         type: String,
@@ -51,16 +51,6 @@ const ProfileSchema = new Schema({
         required: false,
         default: false
     },
-    address: {
-        type: AddressSchema,
-        required: false,
-    },
-    birthDate: {
-        type: Date,
-        required: false
-    }
 })
 
-const ProfileModel = model<IProfile>("Profile", ProfileSchema)
-
-export { ProfileModel, IProfile }
+export { IParticipant, ParticipantSchema }

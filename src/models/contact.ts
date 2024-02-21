@@ -2,8 +2,7 @@ import {Document, model, Schema} from "mongoose";
 import {AddressSchema, IAddress} from "./address";
 import {IPerson} from "./person";
 
-interface IProfile extends IPerson, Document {
-    username: string;
+interface IContact extends IPerson, Document {
     phone?: string;
     phoneVerified?: boolean;
     email?: string;
@@ -12,10 +11,17 @@ interface IProfile extends IPerson, Document {
     address?: IAddress;
 }
 
-const ProfileSchema = new Schema({
-    username: {
-        type: String,
-        required: false // DEB ??
+
+const ContactSchema = new Schema({
+    owner: {
+        type: Schema.Types.ObjectId,
+        ref: 'Profile',
+        required: true
+    },
+    profile: {
+        type: Schema.Types.ObjectId,
+        ref: 'Profile',
+        required: false
     },
     firstName: {
         type: String,
@@ -61,6 +67,6 @@ const ProfileSchema = new Schema({
     }
 })
 
-const ProfileModel = model<IProfile>("Profile", ProfileSchema)
+const ContactModel = model<IContact>("Contact", ContactSchema)
 
-export { ProfileModel, IProfile }
+export { ContactModel, IContact }
