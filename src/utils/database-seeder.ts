@@ -36,6 +36,10 @@ interface ILocationsJson {
     _class?: string;
 }
 
+/**
+ * Create locations from the seed data
+ * @param locations data from locations.json
+ */
 async function createLocations(locations: ILocationsJson[]) {
     try {
         await LocationModel.insertMany(locations)
@@ -46,6 +50,10 @@ async function createLocations(locations: ILocationsJson[]) {
     }
 }
 
+/**
+ * Create profiles with the seed data
+ * @param people seed data from people.json
+ */
 async function createProfiles(people: IPeopleJson[]) {
     try {
         await ProfileModel.insertMany(people)
@@ -56,6 +64,10 @@ async function createProfiles(people: IPeopleJson[]) {
     }
 }
 
+/**
+ * Create groups with the seed data
+ * @param people seed data from people.json
+ */
 async function createGroups(people: IPeopleJson[]) {
     try {
         const groupMap = await createGroupMap(people)
@@ -104,6 +116,10 @@ async function createGroups(people: IPeopleJson[]) {
     }
 }
 
+/**
+ * Create a hashmap with the group names and list of people in each group
+ * @param people
+ */
 async function createGroupMap(people: IPeopleJson[]) {
     const groupMap = new Map<string, IPeopleJson[]>()
 
@@ -120,6 +136,9 @@ async function createGroupMap(people: IPeopleJson[]) {
     return groupMap
 }
 
+/**
+ * Seed the database, must be in a function to allow await calls... (as far as I know)
+ */
 async function seedDatabase() {
     try {
         if (!process.env.MONGO_URL) {
@@ -152,6 +171,5 @@ async function seedDatabase() {
 }
 
 seedDatabase().then(() => {
-    // mongoose.disconnect().then(() => {})
-    // process.exit(0)
+    console.log('FIN')
 })
