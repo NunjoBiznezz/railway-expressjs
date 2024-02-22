@@ -6,6 +6,9 @@ if (!process.env.MONGO_URL) {
 
 mongoose.connect(process.env.MONGO_URL);
 
+// DEB - debugging
+mongoose.set('debug', true)
+
 const database = mongoose.connection;
 
 database.on(

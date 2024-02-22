@@ -3,6 +3,7 @@ import express from "express";
 import profileRoutes from "./routes/profile";
 import locationRoutes from "./routes/location";
 import groupRoutes from "./routes/groups"
+import contactRoutes from './routes/contacts'
 
 const app = express();
 const port = process.env.PORT || 3333;
@@ -18,6 +19,7 @@ app.get("/", async (req, res) => {
 app.use("/profiles", profileRoutes);
 app.use("/locations", locationRoutes);
 app.use("/groups", groupRoutes);
+app.use("/contacts", contactRoutes);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
