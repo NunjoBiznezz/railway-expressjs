@@ -13,6 +13,21 @@ routes.get("/", async (req, res) => {
     }
 });
 
+routes.get("/:id", async (req, res) => {
+    try {
+        const id = req.params['id']
+        const location = await LocationModel.findOne({ _id: id }).exec();
+        if (location) {
+            return res.json(location);
+        } else {
+            return res.status(404).json({ error: "Not found :/" });
+        }
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({ error: "Sorry, something went wrong :/" });
+    }
+});
+
 routes.post("/", async (req, res) => {
     try {
         const Location: ILocation = req.body;

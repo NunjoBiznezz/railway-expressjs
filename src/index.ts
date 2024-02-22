@@ -1,6 +1,6 @@
 import "./lib/db";
 import express from "express";
-import countryRoutes from "./routes/country";
+import profileRoutes from "./routes/profile";
 import locationRoutes from "./routes/location";
 import groupRoutes from "./routes/groups"
 
@@ -15,7 +15,7 @@ app.get("/", async (req, res) => {
   res.json({ message: "Please visit /countries to view all the countries" });
 });
 
-app.use("/countries", countryRoutes);
+app.use("/profiles", profileRoutes);
 app.use("/locations", locationRoutes);
 app.use("/groups", groupRoutes);
 
