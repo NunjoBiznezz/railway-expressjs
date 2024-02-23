@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { GroupModel, IGroup } from "../models/group";
 import groupService from '../services/groupService'
+import {PagedResult} from "../services/paged-result";
 const routes = Router();
 
 // TODO need auth!
@@ -8,12 +9,12 @@ const profileId: string = '65d651fb0bdde2d1399a4bef'
 
 routes.get("/", async (req, res) => {
     try {
-        let skipOption = parseInt(req.query?.skip as string) || undefined
-        let limitOption = parseInt(req.query?.limit as string) || undefined
-        let sortOption = req.query?.sort || undefined
+        let pageOption = parseInt(req.query?.page as string) || 0
+        let sizeOption = parseInt(req.query?.size as string) || 10
+        let sortOption = req.query?.sort as string || undefined
 
-        const groups: IGroup[] = await groupService.findGroups(profileId,
-            { sort: sortOption, skip: skipOption, limit: limitOption }
+        const groups = await groupService.findGroups(profileId,
+            { sort: sortOption, page: pageOption * sizeOption, size: sizeOption }
         )
         return res.json(groups);
     } catch (error) {
