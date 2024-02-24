@@ -2,12 +2,7 @@ import { GroupModel, IGroup } from "../models/group";
 import {IParticipant} from "../models/participant";
 import {PagedResult} from "./paged-result";
 import {IPageRequest} from "./page-request";
-
-const groupProjection = {
-    path: 'participants',
-    select: 'profile firstName middleName lastName'
-};
-
+import {parseSortString} from "./sort-criteria";
 
 const groupService = {
 
@@ -17,35 +12,36 @@ const groupService = {
      */
     async findGroups(profileId: string, options?: IPageRequest) {
         try {
-            let page = options?.page || 0
-            let size = options?.size || 10
+            let pageOption = options?.page || 0
+            let sizeOption = options?.size || 10
+            let sortOption = parseSortString(options?.sort)
 
             let matchCriteria = GroupModel.where({ 'participants.profile': profileId })
 
             const count = await matchCriteria.countDocuments().exec();
             if (count > 0) {
                 let query = GroupModel.find({ 'participants.profile': profileId })
-                if (options?.sort) {
-                    query = query.sort(options.sort)
+                if (options?.sort && options.sort.length) {
+                    query = query.sort(sortOption)
                 }
                 if (options?.page && options?.size) {
-                    query = query.skip(page * size)
+                    query = query.skip(pageOption * sizeOption)
                 }
-                query = query.limit(size)
+                query = query.limit(sizeOption)
 
                 const groups = await query.exec();
 
                 return new PagedResult<IGroup>({
-                    page: page,
-                    size: size,
+                    page: pageOption,
+                    size: sizeOption,
                     totalItems: count,
                     items: groups
                 })
 
             } else {
                 return new PagedResult<IGroup>({
-                    page: page,
-                    size: size,
+                    page: pageOption,
+                    size: sizeOption,
                     totalItems: 0,
                     items: []
                 })
