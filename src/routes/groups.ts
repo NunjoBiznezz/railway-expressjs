@@ -10,13 +10,13 @@ const profileId: string = '65d651fb0bdde2d1399a4bef'
 
 routes.get("/", async (req, res) => {
     try {
-        let pageOption = parseInt(req.query?.page as string) || 0
-        let sizeOption = parseInt(req.query?.size as string) || 10
-        let sortOption = req.query?.sort as string | undefined
+        const options = {
+            page: parseInt(req.query?.page as string) || 0,
+            size: parseInt(req.query?.size as string) || 10,
+            sort: req.query?.sort as string | undefined
+        }
 
-        const groups = await groupService.findGroups(profileId,
-            { sort: sortOption, page: pageOption * sizeOption, size: sizeOption }
-        )
+        const groups = await groupService.findGroups(profileId, options)
         return res.json(groups);
     } catch (error) {
         console.error(error);
@@ -24,10 +24,10 @@ routes.get("/", async (req, res) => {
     }
 });
 
-routes.get("/:id", async (req, res) => {
+routes.get("/:groupId", async (req, res) => {
     try {
-        const id = req.params['id']
-        const group = await groupService.findGroup(profileId, id);
+        const groupId = req.params['groupId']
+        const group = await groupService.findGroup(profileId, groupId);
         if (group) {
             return res.json(group);
         } else {
@@ -42,10 +42,11 @@ routes.get("/:id", async (req, res) => {
 /**
  * Get group participants
  */
-routes.get("/:id/participants", async (req, res) => {
+routes.get("/:groupId/participants", async (req, res) => {
     try {
-        const id = req.params['id']
-        const participants = await groupService.findParticipants(profileId, id);
+        const groupId = req.params['groupId']
+
+        const participants = await groupService.findParticipants(profileId, groupId);
         if (participants) {
             return res.json(participants);
         } else {

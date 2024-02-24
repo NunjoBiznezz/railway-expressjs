@@ -2,7 +2,13 @@ interface SortCriteria {
     [key: string]: 1 | -1; // Each field name maps to sorting order (1 for ascending, -1 for descending)
 }
 
-function parseSortString(input: string | undefined): SortCriteria | undefined {
+/**
+ * Convert a comma-separated string of values to an object to use in a mongodb sort
+ * oprtation
+ * @example '-firstName,lastName' => { firstName: -1, lastName: 1 }
+ * @param input Comma-separated string of sort specifiers or an undefined/null value
+ */
+function parseSortString(input: string | undefined): SortCriteria | undefined | null {
     if (!input) {
         return undefined
     }

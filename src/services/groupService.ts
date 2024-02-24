@@ -3,6 +3,7 @@ import {IParticipant} from "../models/participant";
 import {PagedResult} from "./paged-result";
 import {IPageRequest} from "./page-request";
 import {parseSortString} from "./sort-criteria";
+import {PipelineStage, Types} from "mongoose";
 
 const groupService = {
 
@@ -10,15 +11,15 @@ const groupService = {
      * Return all groups matching the profile id
      * @param profileId Logged in user's profile
      */
-    async findGroups(profileId: string, options?: IPageRequest) {
+    async findGroups(profileId: string, options?: IPageRequest) : Promise<PagedResult<IGroup>> {
         try {
             let pageOption = options?.page || 0
             let sizeOption = options?.size || 10
             let sortOption = parseSortString(options?.sort)
 
-            let matchCriteria = GroupModel.where({ 'participants.profile': profileId })
+            let matchCriteria = { 'participants.profile': profileId }
 
-            const count = await matchCriteria.countDocuments().exec();
+            const count = await GroupModel.where(matchCriteria).countDocuments().exec();
             if (count > 0) {
                 let query = GroupModel.find({ 'participants.profile': profileId })
                 if (options?.sort && options.sort.length) {
@@ -53,27 +54,28 @@ const groupService = {
         }
     },
 
-    async findGroup(profileId: string, id: string) : Promise<IGroup | null> {
+    async findGroup(profileId: string, groupId: string) : Promise<IGroup | null> {
         try {
+            // Letting mongodb assert that the profile exists in the group
+            let matchCriteria = { _id: groupId, 'participants.profile': profileId }
+
             const group = await GroupModel
-                .findOne({_id: id})
-                .sort({ "participants.firstName": "asc", "participants.lastName": "asc" })
-                // .populate('participants.profile')
+                .findOne(matchCriteria)
                 .exec();
             return group || null
         } catch (error) {
             console.error(error);
-            throw new Error(`Error finding group ${id}: ${error}`)
+            throw new Error(`Error finding group ${groupId}: ${error}`)
         }
     },
 
-    async findParticipants(profileId: string, id: string) : Promise<IParticipant[]> {
+    async findParticipants(profileId: string, groupId: string) {
         try {
-            const group = await this.findGroup(profileId, id)
+            let group = await this.findGroup(profileId, groupId)
             return group?.participants || []
         } catch (error) {
             console.error(error);
-            throw new Error(`Error finding group ${id}: ${error}`)
+            throw new Error(`Error finding group participants ${groupId}: ${error}`)
         }
     }
 
